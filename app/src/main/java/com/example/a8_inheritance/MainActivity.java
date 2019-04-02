@@ -13,12 +13,14 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Test Person class
+        //Find UI widgets
         tvPersons = findViewById(R.id.tvPerson);
+
+        // Test Person class
         Person p1 = new Person("Mary Poppins");
         Person p2 = new Person("Harry Potter");
-        tvPersons.setText("**Persons \n" +
-                p1.getInfo() +"\n" + p2.getInfo());
+        String personsText = "**Persons \n" + p1.getInfo() +"\n" + p2.getInfo();
+        tvPersons.setText(personsText);
 
     }
 }
