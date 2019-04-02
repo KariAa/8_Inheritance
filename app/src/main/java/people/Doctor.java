@@ -16,6 +16,7 @@ public class Doctor extends Person {
      */
     public Doctor(String name, String title){
         super(name);
+        this.title=title;
     }
 
     /**

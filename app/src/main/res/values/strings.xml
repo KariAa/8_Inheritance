@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">8_Inheritance</string>
+    <string name="persons">persons</string>
+    <string name="patients">patients</string>
+    <string name="doctor">doctor</string>
+    <string name="queue">queue</string>
 </resources>
