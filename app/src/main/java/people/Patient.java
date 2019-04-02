@@ -32,8 +32,9 @@ public class Patient extends Person {
     @Override
     public String getInfo(){
         return super.getInfo() +
-                "\n - healthy data:  systolic " + this.systolic + "hgmm, diastolic " +
-                this.diastolic + " hgmm" +
+                "\n - healthy data:" +
+                "\n     systolic " + this.systolic + " hgmm," +
+                "\n     diastolic " + this.diastolic + " hgmm" +
                 "\n - treatment: " + this.treatment;
     }
 }

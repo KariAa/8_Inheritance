@@ -10,13 +10,22 @@
         android:id="@+id/tvPerson"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.194"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.127"
+        android:layout_marginStart="65dp"
+        android:layout_marginEnd="57dp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/tvPatients"
+        app:layout_constraintEnd_toStartOf="@+id/tvPatients"
+        app:layout_constraintStart_toStartOf="parent"
         tools:lines="2" />
+
+    <TextView
+        android:id="@+id/tvPatients"
+        android:layout_width="235dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="88dp"
+        android:layout_marginEnd="39dp"
+        android:lines="15"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tvPerson"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </android.support.constraint.ConstraintLayout>

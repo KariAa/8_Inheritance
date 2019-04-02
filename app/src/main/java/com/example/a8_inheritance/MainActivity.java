@@ -4,10 +4,12 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import people.Patient;
 import people.Person;
 
 public class MainActivity extends AppCompatActivity {
     private TextView tvPersons;
+    private TextView tvPatients;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -15,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
         //Find UI widgets
         tvPersons = findViewById(R.id.tvPerson);
+        tvPatients =findViewById(R.id.tvPatients);
 
         // Test Person class
         Person p1 = new Person("Mary Poppins");
@@ -22,5 +25,13 @@ public class MainActivity extends AppCompatActivity {
         String personsText = "**Persons \n" + p1.getInfo() +"\n" + p2.getInfo();
         tvPersons.setText(personsText);
 
+        //Test Patient class
+        Patient pat1 = new Patient("Mikko Miikkulainen", "lobotomia" , 85, 121);
+        Patient pat2 = new Patient("Maija Meikäläinen", "jalan kipsaus" , 1055, 101);
+        Patient pat3 = new Patient("Teppo Tarkka", "uusi silmä" , 85, 121);
+        Patient pat4 = new Patient("Teijo Mannekiini", "kynsien lakkaus" , 82, 133);
+        Patient pat5 = new Patient("Kake Koillinen", "uusi sydän" , 95, 115);
+        String patientsText = "**Patients \n" + pat1.getInfo() +"\n" + pat2.getInfo();
+        tvPatients.setText(patientsText);
     }
 }
