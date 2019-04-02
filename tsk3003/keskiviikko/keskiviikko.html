@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fi">
+   <head>
+       <style>
+       /* Set the size of the div element that contains the map */
+      #map {
+        height: 650px;  
+        width: 100%;  
+       }
+    </style>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+		crossorigin="anonymous">
+       
+	   <title>Pääkaupunkiseudun suurimmat ostoskeskukset</title>
+         <link href="keskiviikko.css" type="text/css" rel="stylesheet">
+       <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>Suurimmat ostoskeskukset pääkaupunkiseudulla</header> 
+        
+    <main> 
+	<div id="map"></div>
+    <script type="text/javascript" src="keskiviikko.js"></script>
+
+    </main>
+	
+	<aside><h4>Ostoskeskukset kaupungeittain</h4>
+                <h6>Espoo</h6>
+					<ul>
+					<li>AINOA</li>
+					<li>Iso Omena</li>
+					<li>Sello</li>
+					</ul>
+				<h6>Helsinki</h6>
+					<ul>
+					<li>Forum</li>
+					<li>Easton</li>
+					<li>Itis</li>
+					<li>Kaari</li>
+					<li>Kamppi</li>
+					<li>Malmin Nova</li>
+					</ul>
+				<h6>Vantaa</h6>
+					<ul>
+					<li>Jumbo</li>
+					<li>Myyrmanni</li>
+					<li>Tikkuri</li>
+					</ul>
+            </aside>     
+		
+		<footer>
+            <h6>Tarkista tilisi saldo</h6>
+            <a href="https://auth.aktia.fi/tunnistus/UI/Login?locale=fi" target="_blank">Aktia</a>
+            <a href="https://danskebank.fi/sinulle/asiakaspalvelu?n-login=pbebank" target="_blank">Danske Bank</a>
+            <a href="https://www4.handelsbanken.fi/pankki/kirjautuminen?0" target="_blank">Handelsbanken</a>
+            <a href="https://solo1.nordea.fi/nsp/login" target="_blank">Nordea</a>
+            <a href="https://uusi.op.fi/henkiloasiakkaat/paivittaiset" target="_blank">OP</a>
+            <a href="https://www4.poppankki.fi/pankki/kirjautuminen?0" target="_blank">POP-Pankki</a>
+            <a href="https://www.s-pankki.fi/fi/arjen-raha-asiat/verkkopankki/" target="_blank">S-Pankki</a>
+            <a href="https://www4.saastopankki.fi/pankki/kirjautuminen?0" target="_blank">Säästöpankki</a> 
+        </footer>
+
+	      <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCpE1NV43lLbnnReknK9DVJV9fyg9pupl8&callback=initMap">
+    </script>
+	
+    </body> 
+
+</html>

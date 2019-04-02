@@ -1,0 +1,28 @@
+Minnalle info eng. työstä
+Modern web development
+Best practises ..?
+
+Tutkimusongelma: kehitysprosessi
+Casena oma projekti
+
+Tiivistelmä: tavoite ja tulokset
+
+Johdanto: Mikä ongelma, miten lähdettiin ratkaisemaan ja miten käsittelit sitä työssä
+
+1. Sisällysluettelo
+
+2. Evolution of web
+
+3. Modular web development
+
+4. Case Iteraatiot, miten edettiin
+
+5. Case Toteutus ja teknologiat
+
+6. Loppupäätelmät
+- peilaa alussa esitettyihin tavoitteisiin ja ongelmiin
+
+Aikataulu 1 kk. 50 s lähteet 
+1.3.  Johdanto + sisällysluettelo + Luvut iteraatiosta ja teknologioista 15-20 s.
+
+

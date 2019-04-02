@@ -1,0 +1,87 @@
+      /* Always set the map height explicitly to define the size of the div
+       * element that contains the map. */
+      
+      html,
+      body {
+          height: 100%;
+          margin: 0;
+          padding: 0;
+      }
+      
+      .elementit {
+          position: absolute;
+          z-index: 99px;
+      }
+      
+      #map {
+          height: 100%;
+      }
+      
+      #otsikko {
+          position: relative;
+          z-index: 99;
+      }
+      
+      #adminbutton {
+          position: fixed;
+          right: 5px;
+          top: 5px;
+          z-index: 99;
+      }
+      
+      #admin {
+          position: fixed;
+          right: 25px;
+          top: 210px;
+          z-index: 99;
+          background-color: rgba(222, 228, 233, 0.8);
+          ;
+          padding: 15px;
+      }
+      
+      #places {
+          position: absolute;
+          right: 38px;
+          top: 288px;
+          z-index: 99;
+          background-color: rgba(222, 228, 233, 0.8);
+      }
+      
+      #searchBox {
+          z-index: 99;
+          max-width: 100%;
+          margin-bottom: 60px;
+          padding: 5px;
+      }
+      
+      #menu {
+          position: fixed;
+          right: 25px;
+          bottom: 59px;
+          z-index: 99;
+          padding: 14px 20px;
+      }
+      
+      #zin {
+          z-index: 99;
+      }
+      
+      .hide {
+          display: none;
+      }
+      
+      .markerikkuna {}
+      
+      #copyright {
+          position: fixed;
+          bottom: 25px;
+          left: 5px;
+          font-size: 10px;
+          z-index: 100;
+          background: rgba(230, 230, 230, 0.7);
+      }
+
+
+.pac-container {
+    margin-top: -200px;
+}

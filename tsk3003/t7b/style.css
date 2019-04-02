@@ -1,0 +1,9 @@
+.marker {
+            border-radius: 10px;
+            background: red;
+            position: absolute;
+            width: 14px;
+            height: 14px;
+	    top:100px;
+            left:300px;
+        }

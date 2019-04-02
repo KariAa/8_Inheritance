@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Kiintorastit kartalla</title>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+    <!-- CSS -->
+
+    <!-- Tähän CSS tiedoston linkki, joka asettaa karttaelementin korkeuden, jotta se näkyy sivulla
+    -->
+    <link href="css/styles.css" type="text/css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+
+
+    <!-- JAVASCRIPT -->
+
+    <!-- JQUERY, pitää olla ennen sivun omia js filuja -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!-- Jquery UI kirjasto, tarvitaan autocomplete metodiin -->
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link href="https://code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css" rel="Stylesheet">
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/papaparse.js"></script>
+
+    <!-- Omat JS filut -->
+    <script type="text/javascript" src="js/map.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+    <!-- Elementit palveluun -->
+    <div class="elementit">
+        <h1 id="otsikko"></h1>
+
+        <button class="btn btn-default" id="adminbutton">Ehdota lisäystä!</button>
+
+        <div class="hide" id="admin">
+            <p>Lataa tästä aineisto csv muodossa!</p>
+            <textarea id="myFile" rows="6" cols="30"></textarea>
+            <button class="btn btn-default" id="upload">Lataa</button>
+        </div>
+        <input class="controls" id="searchBox" type="text" size="55" placeholder="Kirjoita kaupunki...">
+
+        <!--<button class="btn btn-default" id="menu">
+            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+        </button>
+        -->
+
+        <div id="places"></div>
+        <div id="copyright">© </div>
+
+    </div>
+
+    <!-- Kartta elementti -->
+    <div id="map"></div>
+
+    <!-- Kartta API -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfOBYMNmdyaMwKfsJdf7obu8VHFIvFM1s&libraries=places&callback=initMap" async defer></script>
+
+    <!-- Jquery kirjastot boostrappiin sekä boostrap js -->
+
+    <script language="JavaScript" type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script language="JavaScript" type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- CSV to JSON kirjastot -->
+    <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.js"></script>
+    <script language="JavaScript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/0.8.3/jquery.csv.min.js"></script>
+
+
+</body>
+
+</html>

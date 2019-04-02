@@ -1,0 +1,8 @@
+﻿Itsearviointi - Harjoitus 1
+
+Vaikeinta työssä oli saada navigaatiobaarit keskelle, mutta kokeilun kautta sekin selvisi. 
+
+Värien valitseminen oli vaikeaa, lisäksi tekstit käyttäytyivät omituisesti, johon en keksinyt ratkaisua ennenkuin käytin
+validaattoreita.
+
+Sivussa voisi parantaa ulkoasua, pehmentää reunoja ja parantaa linkkien välityksiä.

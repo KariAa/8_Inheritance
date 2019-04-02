@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA66VvD7Pa8-7q5KbW48sNCGjGzpiEMiYc&callback" type="text/javascript"></script>
+   <style>
+      html, body {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  <style>
+    /* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+    /* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+    
+    /* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+    
+    /* On small screens, set height to 'auto' for sidenav and grid */
+    @media screen and (max-width: 767px) {
+      .sidenav {
+        height: auto;
+        padding: 15px;
+      }
+      .row.content {height: auto;} 
+    }
+  </style>-->
+</head>
+<body>
+    
+<div class="jumbotron">
+  <div class="container text-center">
+    <h1>Huoltoasemat matkan varrella</h1>      
+    <p>Helsinki - Mikkeli</p>
+  </div>
+</div>
+    
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Portfolio</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>John's Blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="#section2">Friends</a></li>
+        <li><a href="#section3">Family</a></li>
+        <li><a href="#section3">Photos</a></li>
+      </ul><br></div>
+   
+    
+
+<div id="map" style="height: 50%;">
+    <div class="col-sm-1">
+    
+</div></div>
+ 
+<script type="text/javascript">
+  var locations = [
+    ['<b>Shell Vallikallio</b>', 60.2272, 24.8236, 1, '<a href="https://www.helmisimpukka.fi/espoo-vallikallio" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1042" target="_blank">Polttoaineen hintatiedot</a>', 'Vallikallionkatu 9', '02650 Espoo'],
+    ['<b>Seo Pukinmäki</b>', 60.2432, 24.9788, 2, '<a href="https://seo.fi/seo-asemat/4537-seo-helsinki-pukinmaeki" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1119" target="_blank">Polttoaineen hintatiedot</a>', 'Pukinmäenkaari 55', '00720 Helsinki'],
+    ['<b>Shell Pukinmäki</b>', 60.2411, 24.9953, 3, '<a href="https://www.helmisimpukka.fi/helsinki-pukinmaki" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1056" target="_blank">Polttoaineen hintatiedot</a>', 'Ratavallintie 1', '00720 Helsinki'],
+    ['<b>Neste Malmi</b>', 60.2413, 25.0209, 4, '<a href="https://www.neste.fi/asema/neste-k-helsinki-malmi" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1673" target="_blank">Polttoaineen hintatiedot</a>', 'Pihlajamäentie 37', '00700 Helsinki'],
+    ['<b>Neste Metsola</b>', 60.3448, 25.1026, 5, '<a href="https://www.neste.fi/asema/neste-express-vantaa-metsola" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1980" target="_blank">Polttoaineen hintatiedot</a>', 'Murmelikuja 3', '01480 Vantaa'],
+    ['<b>ABC Korso</b>', 60.3439, 25.1028, 6, '<a href="https://www.abcasemat.fi/fi/asemat/abc-korso-vantaa-584847586" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1924" target="_blank">Polttoaineen hintatiedot</a>', 'Pihkalantie 4', '01480 Vantaa'],
+    ['<b>Shell Mikkola</b>', 60.3441, 25.0991, 7, '<a href="https://www.helmisimpukka.fi/asemat/vantaa-mikkola" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1029" target="_blank">Polttoaineen hintatiedot</a>', 'Venuksenkuja 4', '01480 Vantaa'],
+    ['<b>Huoltoasema Kärkkäinen</b>', 60.9356, 25.6280, 8, '', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=2579" target="_blank">Polttoaineen hintatiedot</a>', 'Pasaasi 1', '15700 Lahti'],
+    ['<b>Neste Karisto</b>', 60.9832, 25.7367, 9, '<a href="https://www.neste.fi/asema/neste-k-lahti-karisto" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=2535" target="_blank">Polttoaineen hintatiedot</a>', 'Kauppiaankatu 1', '15150 Lahti'],
+    ['<b>Shell Kymijärvi</b>', 60.9841, 25.7386, 10, '', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=2446" target="_blank">Polttoaineen hintatiedot</a>', 'Siivolankatu 2', '15300 Lahti'],
+    ['<b>Neste Hevossaarentie</b>', 61.1923, 25.9958, 11, '<a href="https://www.neste.fi/asema/neste-automaatti-heinola-hevossaarentie-cm" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1473" target="_blank">Polttoaineen hintatiedot</a>', 'Hevossaarentie 1', '18100 Heinola'],
+    ['<b>Teboil Tähtihovi</b>', 61.2187, 26.0137, 12, '<a href="https://www.teboil.fi/asemaverkosto/heinola/heinola-tahtihovi/" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=584" target="_blank">Polttoaineen hintatiedot</a>', 'Juornatpolku 41', '18100 Heinola'],
+    ['<b>Neste Kuortti</b>', 61.4212, 26.4325, 13, '<a href="https://www.neste.fi/asema/neste-express-pertunmaa-kuortti target="_blank"">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1320 target="_blank"">Polttoaineen hintatiedot</a>', 'Siilitie 1', '19410 Pertunmaa'],
+    ['<b>ABC Kuortti</b>', 61.4212, 26.4342, 14, '<a href="https://www.abcasemat.fi/fi/asemat/abc-kuortti-634972111" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=38" target="_blank">Polttoaineen hintatiedot</a>', 'Mäyrätie 1', '19410 Kuortti'],
+    ['<b>Teboil Suittilahti</b>', 61.4350, 26.5952, 15, '<a href="https://www.teboil.fi/asemaverkosto/mantyharju/mantyharju-suittilahti/" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=2350" target="_blank">Polttoaineen hintatiedot</a>', 'Motellintie 1', '52720 Mäntyharju'],
+    ['<b>Neste Vihantasalmi</b>', 61.4417, 26.6802, 16, '<a href="http://www.neste-vihantasalmi.fi/web/" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1337" target="_blank">Polttoaineen hintatiedot</a>', 'Vihannanranta 1', '52700 Mäntyharju'],
+    ['<b>Seo Hietanen</b>', 61.5810, 27.0064, 17, '<a href="https://seo.fi/seo-asemat/4539-seo-hietanen" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=343" target="_blank">Polttoaineen hintatiedot</a>', 'Hietasentie 2', '52510 Mikkeli'],
+    ['<b>Neste Otava</b>', 61.6435, 27.0768, 18, '<a href="https://www.neste.fi/asema/neste-mikkeli-otava" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1335" target="_blank">Polttoaineen hintatiedot</a>', 'Hirvensalmentie 2', '50670 Mikkeli'],
+    ['<b>ABC Pitkäjärvi</b>', 61.6759, 27.2436, 19, '<a href="https://www.abcasemat.fi/fi/asemat/abc-pitkajarvi-mikkeli-697944999" target="_blank">[kotisivu] </a>', '<a href="https://www.polttoaine.net/index.php?cmd=map&id=1335" target="_blank">Polttoaineen hintatiedot</a>', 'Hietakatu 7', '50130 Mikkeli'],
+    ];
+
+  var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 8,
+      gestureHandling: 'greedy',
+      center: new google.maps.LatLng(61.1137, 25.9245),
+      mapTypeId: google.maps.MapTypeId.ROADMAP,
+      styles: [
+  {
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#242f3e"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#746855"
+      }
+    ]
+  },
+  {
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#242f3e"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.land_parcel",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.locality",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d59563"
+      }
+    ]
+  },
+  {
+    "featureType": "administrative.neighborhood",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "poi",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d59563"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#263c3f"
+      }
+    ]
+  },
+  {
+    "featureType": "poi.park",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#6b9a76"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#38414e"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#212a37"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#9ca5b3"
+      }
+    ]
+  },
+  {
+    "featureType": "road.arterial",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#746855"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "geometry.stroke",
+    "stylers": [
+      {
+        "color": "#1f2835"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "road.highway",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#f3d19c"
+      }
+    ]
+  },
+  {
+    "featureType": "road.local",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "transit",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#2f3948"
+      }
+    ]
+  },
+  {
+    "featureType": "transit.station",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#d59563"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "geometry",
+    "stylers": [
+      {
+        "color": "#17263c"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text",
+    "stylers": [
+      {
+        "visibility": "off"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.fill",
+    "stylers": [
+      {
+        "color": "#515c6d"
+      }
+    ]
+  },
+  {
+    "featureType": "water",
+    "elementType": "labels.text.stroke",
+    "stylers": [
+      {
+        "color": "#17263c"
+      }
+    ]
+  }
+]
+    });
+
+    var infowindow = new google.maps.InfoWindow();
+
+    var marker, i;
+
+    for (i = 0; i < locations.length; i++) { 
+      marker = new google.maps.Marker({
+        position: new google.maps.LatLng(locations[i][1], locations[i][2]),
+        map: map,
+        icon: 'fillingstation3.png'
+      });
+
+      google.maps.event.addListener(marker, 'click', (function(marker, i) {
+        return function() {
+          infowindow.setContent(locations[i][0] + "<br />" + locations[i][6] + "<br />" + locations[i][7] + "<br />" + locations[i][4] + "<br />" + "<br />" + locations[i][5]);
+          infowindow.open(map, marker);
+        }
+      })(marker, i));
+    }
+</script>
+        </div>
+</div>
+
+</body>
+</html>

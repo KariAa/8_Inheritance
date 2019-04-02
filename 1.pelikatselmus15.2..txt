@@ -1,0 +1,163 @@
+1	9:00	Miettinen	Johanna	Undestined	CD Projekt REE
+	9:00	Tolvanen	Laura	Undestined	CD Projekt REE
+- ARVOSANA: 4,25
+Hyvä tarina, hyvin suunniteltu, koodia kommentoitu, paljon koodia, kahdestaan hyvä suoritus, toimii
+
+2	9:20	Jyrälä	Jesse	Rescue the	Electronic Farts 2.0
+	9:20	Roininen	Eelis	princess	Electronic Farts 2.0
+	9:20	Voutilainen	Taneli	-"-	Electronic Farts 2.0
+
+- ARVOSANA 3,25
+Missä koodi - tehtävä palauttamatta, simppeli
+
+3	9.40	Besic	Emil	Endless	Frozen 2.0
+	9.40	Lavila	Janne	Endless	Frozen 2.0
+	9.40	Winter	Patrik	Endless	Frozen 2.0
+
+- ARVOSANA 3,5
+Pieni työmäärä, varmaan Janne tehnyt eniten, db tehty
+	10.00-10.10	TAUKO	
+		
+4	10.10	Kalliomaa	Samuli	CrazyGrans	HyperCell
+	10.10	Kilpi	Mira	CrazyGrans	HyperCell
+	10.10	Kärnä	Aaro	CrazyGrans	HyperCell
+
+- ARVOSANA 3
+Koodi palautettu vain muutama luokka, vähän koodia, sekavaa
+
+5	10.30	Bowo	Benjamin	SumWan's socks	TeamSumWan
+	10.30	Lehto	Mirka	SumWan's socks	TeamSumWan
+	10.30	Rantaniska	Minerva	SumWan's socks	TeamSumWan
+
+
+
+7	11.10	Backman	Ingrid	High Pressure	Pubisoft
+	11.10	Kotilainen	Tommi	High Pressure	Pubisoft
+	11.10	Peiponen	Topias	High Pressure	Pubisoft'
+
+- ARVOSANA 4,75
+Pelin metriikkaa mukana
+
+8	11.30	Liljeqvist	Mikko	Space game	TheBest
+	11.30	Oksanen	Aatu	Space game	TheBest
+	11.30	Saarelma	Jere	Space game	TheBest
+
+- ARVOSANA 3,75
+Aatu ei tainnut tehdä mitään
+
+9	11.50	Lindqvist	Panu	L'pei	titanic
+	11.50	Tähkä	Teemu	L'pei	titanic
+	11.50	Vaarama	Roope	L'pei	titanic
+
+- ARVOSANA 3,5
+
+***********************************Mobiles
+Nazarova	Rukhsorap3	Annushka Project
+Saveleva	Mariia	p3	Annushka Project
+Stefantsev	Mikhail	p3	Annushka Project
+
+- ARVOSANA 5
+Professional, paljon erikoispiirteiotä
+
+
+Dao	Quan	p3	Eagle Eyes (EE)
+Nguyen	NHAN	p3	Eagle Eyes (EE)
+Vo Le	Duc	p3	Eagle Eyes (EE)
+
+- ARVOSANA 3
+Hyvä alkuesitys - video meni vähän sekoiluksi, Duc tehnyt suurimman osan?
+Ei erikoispiirteitä-notification pop up? APIt puuttuu, kommentointi heikohkoa
+
+Brinkmann	Eliza	p3	Frozen
+Váró	Melinda	p3	Frozen
+Wong	Chavilah	P3	Frozen EI TULLUT TENTTIIN
+
+- ARVOSANA 4
+DB käytössä, JavaDoc commentit puuttuu
+
+LUONG	PHUC	p3	Java Shark
+Nham	Tran	p3	Java Shark
+Vu Nguyen	Mai	p2	Java Shark
+
+-ARVOSANA 3,25
+Tran tehnyt paljon?
+- Haisee kopiolta
+- koodia ei kommentoitu
+
+- ARVOSANA 3,5
+ 
+Borrer	Jayne	p3	MightyDucks
+Correia da Silva	Thiago	p3	MightyDucks
+Ikigu	Timothy	p3	MightyDucks
+
+- ARVOSANA 3,75
+- db käytössä,
+
+Ghani	Asim	p3	Team Batman
+Hasan	Zakaria	p3	Team Batman POISSA
+Malik	Kashif	p3	Team Batman
+
+ARVOSANA 3,5
+Simppeli
+Mitä zacharia on tehnyt?
+
+
+Mai	Nhan	p3	Team meow meow
+Nguyen	vy	p3	Team meow meow
+WU	I-EN (Lily)	p3	Team meow meow
+
+-ARVOSANA 3,25
+Trello aika suppea,koodi suppea, peliidea? Koodia ei kommentoitu. Käytetty tiedostoa.
+- Tässä myös kopioinnin makua.
+
+
+Lam Minh	Tuan (TALA)	p3	The Last
+Mishra	Ram	p3	The Last
+Vu	Dung	p3	The Last
+
+ARVOSANA 2,0
+- javadoc muttei kommentteja, yksinkertaisin koodi
+- vu ei ole tehnyt mitään
+
+Chen	Rui	p3	TheBest
+Poudel	Ganesh	p3	TheBest
+Waugh	Joshua	p3	TheBest tehnyt kaikki koodin ja trello - ?
+
+ARVOSANA 5
+- mukava, pitkiä metodeja, vähemmän kommentteja, db kätössä, uniikki idea, muutamia kivoja jippoja
+
+Cordero Marcos	Miguel	ok	TopTeam
+Sanz Martin	Alejandro	p3	TopTeam
+Meredova	Aylar	p3	TopTeam
+
+ARVOSANA 3,75
+Aylar tehnyt paljon, Miguel?
+
+- ARVOSANA 3
+Koodi palautettu vain muutama luokka, vähän koodia, sekavaa
+
+5	10.30	Bowo	Benjamin	SumWan's socks	TeamSumWan
+	10.30	Lehto	Mirka	SumWan's socks	TeamSumWan
+	10.30	Rantaniska	Minerva	SumWan's socks	TeamSumWan
+
+
+
+7	11.10	Backman	Ingrid	High Pressure	Pubisoft
+	11.10	Kotilainen	Tommi	High Pressure	Pubisoft
+	11.10	Peiponen	Topias	High Pressure	Pubisoft'
+
+- ARVOSANA 4,75
+Pelin metriikkaa mukana
+
+8	11.30	Liljeqvist	Mikko	Space game	TheBest
+	11.30	Oksanen	Aatu	Space game	TheBest
+	11.30	Saarelma	Jere	Space game	TheBest
+
+- ARVOSANA 3,75
+Aatu ei tainnut tehdä mitään
+
+9	11.50	Lindqvist	Panu	L'pei	titanic
+	11.50	Tähkä	Teemu	L'pei	titanic
+	11.50	Vaarama	Roope	L'pei	titanic
+
+- ARVOSANA 3,5

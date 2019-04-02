@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>jQuery.getJSON demo</title>
+  <style>
+  img {
+    height: 100px;
+    float: left;
+    padding: 10px;
+  }
+  h3{
+    clear: both;
+  }
+  </style>
+<script type = "text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+</script>
+</script>
+
+</head>
+<body>
+<div id="JSONReply"> </div>
+ 
+<div id="images"></div>
+ 
+<script>
+(function() {
+  var flickerAPI = "https://api.flickr.com/services/feeds/photos_public.gne?jsoncallback=?";
+  $.getJSON( flickerAPI, {
+    tags: "abba",
+    tagmode: "any",
+    format: "json"
+  })
+    .done(function( data ) {
+     //console.log(JSON.stringify(data));
+     //document.getElementById("JSONReply").innerHTML = //JSON.stringify(data);
+     $.each( data.items, function( i, item ) {
+        
+        $( "#images" ).append("<p>");
+    	$( "#images" ).append("<h3>" + item.title +"</h3>");
+        $( "<img>" ).attr( "src", item.media.m ).appendTo( "#images" );
+        $( "#images" ).append("</p>");
+
+        
+        //$( "<JSONReply>" ).html(item.toString() +"<br>").appendTo( "#JSONReply" );
+        if ( i === 2 ) {
+          return false;
+        }
+      });
+    });
+        
+})();
+</script>
+ 
+</body>
+</html>

@@ -1,0 +1,58 @@
+Chen	Rui	p3	TheBest	10.30	Health guide
+Poudel	Ganesh	p3	TheBest		Health guide
+Waugh	Joshua	p3	TheBest		Healt guide
+Excellent 5-
+
+Nazarova	Rukhsora	p3	Annushka Project	10:40	Calculator
+Saveleva	Mariia	p3	Annushka Project		Calculator
+Stefantsev	Mikhail	p3	Annushka Project		Calculator
+Excellent 5
+calc.mstefan99.com
+näyttö fragmentteina
+
+Dao	Quan	p3	Eagle Eyes (EE)	10:50	healtcare
+Nguyen	NHAN	p3	Eagle Eyes (EE)		healtcare
+Vo Le	Duc	p3	Eagle Eyes (EE)		healtcare
+3,5
+
+
+Brinkmann	Eliza	p3	Frozen	10:50	Drankometer
+Váró	Melinda		p3	Frozen		Drankometer
+Wong	Chavilah	P3	Frozen		Drankometer  NO SHOW
+good 5-
+
+LUONG	PHUC	p3		Java Shark	11:00	Iisisuomi
+Nham	Tran	p3		Java Shark		Iisisuomi
+Vu Nguyen	Mai	p2	Java Shark		Iisisuomi
+4 (eivät esitelleet itseään)
+
+LUONG	PHUC	p3	Java Shark	11:00	Iisisuomi
+Nham	Tran	p3	Java Shark		Iisisuomi
+Vu Nguyen	Mai	p2	Java Shark		Iisisuomi
+Good structure 5
+
+Ghani	Asim	p3	Team Batman	11:20	University guide
+Hasan	Zakaria	p3	Team Batman		University guide
+Malik	Kashif	p3	Team Batman		University guide
+Selvä esitys 5-
+
+Mai	Nhan	p3	Team meow meow	11:30	game ranking
+Nguyen	vy	p3	Team meow meow		game ranking
+WU	I-EN (Lily)	p3	Team meow meow		game ranking
+takkuileva esitys 3,0
+
+Lam Minh	Tuan (TALA)	p3	The Last	11:40	Football app
+Mishra	Ram	p3	The Last		Football app
+Vu	Dung	p3	The Last		Football app  NO  SHOW
+kiva, vähän meni tekniseksi 4
+
+Cordero Marcos	Miguel	ok	TopTeam	12:00	Shopping list
+Sanz Martin	Alejandro	p3	TopTeam		Shopping list
+Meredova	Aylar	p3	TopTeam		Shopping list
+
+
+
+
+
+
+
