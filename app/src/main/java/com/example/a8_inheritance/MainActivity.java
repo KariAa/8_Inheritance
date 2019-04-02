@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private TextView tvPersons;
     private TextView tvPatients;
     private TextView tvDoctor;
+    private TextView tvPatientQueue;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -22,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         tvPersons = findViewById(R.id.tvPerson);
         tvPatients =findViewById(R.id.tvPatients);
         tvDoctor =findViewById(R.id.tvDoctor);
+        tvPatientQueue =findViewById(R.id.tvPatientQueue);
 
         // Test Person class
         Person p1 = new Person("Mary Poppins");
@@ -44,5 +46,6 @@ public class MainActivity extends AppCompatActivity {
 
         //Test PatientQueue
         PatientQueue pq = new PatientQueue("Jorvi", doc);
+        tvPatientQueue.setText(pq.getQueueData());
     }
 }

@@ -12,7 +12,7 @@ import people.Patient;
  * @since 1.1.1991
  */
 public class PatientQueue {
-    private ArrayList<Patient> patientInQueue = new ArrayList<>();
+    private ArrayList<Patient> patientsInQueue = new ArrayList<Patient>();
     private Doctor doctorInCharge;
     private String hospitalName;
 
@@ -32,7 +32,7 @@ public class PatientQueue {
      */
 
     public void addPatient(Patient pat){
-        this.patientInQueue.add(pat);
+        this.patientsInQueue.add(pat);
     }
 
     /**
@@ -43,7 +43,7 @@ public class PatientQueue {
         String temp="**** Patient Queue in Hospital " + this.hospitalName;
         temp +="\nDoctor in charge is " + this.doctorInCharge.getInfo();
         temp +="\nPatients in the queue";
-        for(Patient p : this.patientInQueue){
+        for(Patient p : this.patientsInQueue){
             temp+="\n"+ p.getInfo();
         }
         return temp;
