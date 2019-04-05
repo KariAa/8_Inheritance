@@ -4,7 +4,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import health.PatientQueue;
 import people.Doctor;
+import people.Patient;
 import people.Person;
 
 public class MainActivity extends AppCompatActivity {
@@ -22,7 +24,26 @@ public class MainActivity extends AppCompatActivity {
         Doctor doc = new Doctor("Lauri Lääkäri", "Kallonkutistaja");
         allText += "\nDoctor: " + doc.getInfo();
 
-        tvAllOutput.setText((allText));
+        Patient pat1 = new Patient("Paavo Peloton", "Varpaan poisto", 129,87);
+        allText += "\nPatient: " + pat1.getInfo();
+
+
+        Patient pat2 = new Patient("Kake Aivoton", "Uusi kampus", 139,77);
+        Patient pat3 = new Patient("Maija Puujalka", "Uusi vasen jalka", 125,83);
+        Patient pat4 = new Patient("Oscar Olematon", "Uusi olemus - Nike", 122,76);
+
+        //**************************** Lopyullinen
+        PatientQueue pq = new PatientQueue("Jorvi", doc);
+        pq.addPatient(pat1);
+        pq.addPatient(pat2);
+        pq.addPatient(pat3);
+        pq.addPatient(pat4);
+
+
+        allText ="***  LOPULLINEN \n" + pq.getInfo();
+        tvAllOutput.setText(allText);
+
+
 
     }
 }
