@@ -43,8 +43,10 @@ public class PatientQueue {
         String temp="**** Patient Queue in Hospital " + this.hospitalName;
         temp +="\nDoctor in charge is " + this.doctorInCharge.getInfo();
         temp +="\nPatients in the queue";
+        int i=1;
         for(Patient p : this.patientsInQueue){
-            temp+="\n"+ p.getInfo();
+            temp+="\n"+ i + ". " +   p.getInfo();
+            i++;
         }
         return temp;
     }

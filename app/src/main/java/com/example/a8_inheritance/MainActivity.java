@@ -35,8 +35,7 @@ public class MainActivity extends AppCompatActivity {
         Patient pat1 = new Patient("Mikko Miikkulainen", "lobotomia" , 85, 121);
         Patient pat2 = new Patient("Maija Meikäläinen", "jalan kipsaus" , 1055, 101);
         Patient pat3 = new Patient("Teppo Tarkka", "uusi silmä" , 85, 121);
-        Patient pat4 = new Patient("Teijo Mannekiini", "kynsien lakkaus" , 82, 133);
-        Patient pat5 = new Patient("Kake Koillinen", "uusi sydän" , 95, 115);
+
         String patientsText = "**Patients \n" + pat1.getInfo() +"\n" + pat2.getInfo();
         tvPatients.setText(patientsText);
 
@@ -46,6 +45,11 @@ public class MainActivity extends AppCompatActivity {
 
         //Test PatientQueue
         PatientQueue pq = new PatientQueue("Jorvi", doc);
+        pq.addPatient(pat1);
+        pq.addPatient(pat2);
+        pq.addPatient(pat3);
+
+
         tvPatientQueue.setText(pq.getQueueData());
     }
 }
